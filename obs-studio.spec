@@ -15,7 +15,7 @@
 %global shortcommit1 %(c=%{commit1}; echo ${c:0:7})
 
 Name:           obs-studio
-Version:        27.0.0-rc1
+Version:        27.0.0~rc1
 Release:        3%{?dist}
 Summary:        Open Broadcaster Software Studio
 
