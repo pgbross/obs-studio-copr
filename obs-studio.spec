@@ -15,13 +15,13 @@
 %global shortcommit1 %(c=%{commit1}; echo ${c:0:7})
 
 Name:           obs-studio
-Version:        27.0.0~rc1
+Version:        27.0.0
 Release:        3%{?dist}
 Summary:        Open Broadcaster Software Studio
 
 License:        GPLv2+
 URL:            https://obsproject.com/
-Source0:        https://github.com/obsproject/obs-studio/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/obsproject/obs-studio/archive/%{version}-rc1/%{name}-%{version}-rc1.tar.gz
 Source1:        https://github.com/obsproject/obs-vst/archive/%{commit1}/obs-vst-%{shortcommit1}.tar.gz
 
 BuildRequires:  gcc
