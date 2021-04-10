@@ -15,7 +15,7 @@
 %global shortcommit1 %(c=%{commit1}; echo ${c:0:7})
 
 Name:           obs-studio
-Version:        26.1.2
+Version:        27.0.0-rc1
 Release:        3%{?dist}
 Summary:        Open Broadcaster Software Studio
 
@@ -49,6 +49,7 @@ BuildRequires:  libXinerama-devel
 BuildRequires:  luajit-devel
 BuildRequires:  mbedtls-devel
 BuildRequires:  pulseaudio-libs-devel
+BuildRequires:  pipewire-devel
 %if 0%{?fedora} || 0%{?rhel} > 7
 BuildRequires:  python3-devel
 %else
@@ -56,6 +57,7 @@ BuildRequires:  python2-devel
 %endif
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtsvg-devel
+BuildRequires:  qt5-qtwayland-devel
 BuildRequires:  qt5-qtx11extras-devel
 %if 0%{?fedora} || 0%{?rhel} > 7
 BuildRequires:  speexdsp-devel
@@ -64,6 +66,7 @@ BuildRequires:  speex-devel
 %endif
 BuildRequires:  swig
 BuildRequires:  systemd-devel
+BuildRequires:  wayland-devel
 BuildRequires:  vlc-devel
 BuildRequires:  x264-devel
 
